@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9140e4a8-7e6a-4ae7-9e2d-f6b470606e4c" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <execution>
+      <executable path="composer" />
+    </execution>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/composer" />
+    </include_path>
+  </component>
+  <component name="ProjectId" id="1gdpYljMHxy7GiIHG9S6zLQvSDU" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9140e4a8-7e6a-4ae7-9e2d-f6b470606e4c" name="Default Changelist" comment="" />
+      <created>1598454374403</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1598454374403</updated>
+      <workItem from="1598454375412" duration="317000" />
+      <workItem from="1598454862775" duration="1047000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="459" y="276" key="ComposerInitDialogKey" timestamp="1598455240911">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="459" y="276" key="ComposerInitDialogKey/0.0.1366.728/-1920.0.1920.1040@0.0.1366.728" timestamp="1598455240911" />
+    <state x="463" y="105" key="FileChooserDialogImpl" timestamp="1598455671041">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="105" key="FileChooserDialogImpl/0.0.1366.728/-1920.0.1920.1040@0.0.1366.728" timestamp="1598455671041" />
+    <state x="447" y="87" key="NewPhpClassDialog" timestamp="1598454407904">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="447" y="87" key="NewPhpClassDialog/0.0.1366.728/-1920.0.1920.1040@0.0.1366.728" timestamp="1598454407904" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1598455699261">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728/-1920.0.1920.1040@0.0.1366.728" timestamp="1598455699261" />
+  </component>
+</project>

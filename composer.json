@@ -1,0 +1,21 @@
+{
+    "name": "undjike/cleansms",
+    "description": "Send SMS and manage your CleanSMS account.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ulrich Pascal Ndjike Zoa",
+            "email": "ndjikezoaulrich@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Undjike\\CleanSmsPhp\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "ext-curl": "*"
+    }
+}
