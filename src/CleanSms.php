@@ -86,7 +86,7 @@ class CleanSms
      */
     public static function create($apiKey = null, $email = null)
     {
-        return new self($apiKey, $email);
+        return new static($apiKey, $email);
     }
 
     /**

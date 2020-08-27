@@ -13,9 +13,18 @@
             "Undjike\\CleanSmsPhp\\": "src/"
         }
     },
+    "autoload-dev": {
+        "psr-4": {
+            "Undjike\\CleanSmsPhp\\Tests\\": "tests/"
+        }
+    },
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
         "ext-curl": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.3",
+        "ext-json": "*"
     }
 }
