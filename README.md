@@ -22,7 +22,7 @@ Then, let's start.
 This package can be installed via composer. Just type :
 
 ```bash
-composer require undjike/plan-subscription-system
+composer require undjike/cleansms
 ```
 
 This will download everything needed for the package to work in your project.

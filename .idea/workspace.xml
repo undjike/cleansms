@@ -19,8 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9140e4a8-7e6a-4ae7-9e2d-f6b470606e4c" name="Default Changelist" comment="Performed tests">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    <list default="true" id="9140e4a8-7e6a-4ae7-9e2d-f6b470606e4c" name="Default Changelist" comment="Added README.md and LICENSE.md">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -35,6 +34,12 @@
     </execution>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.4">
@@ -135,7 +140,7 @@
       <updated>1598454374403</updated>
       <workItem from="1598454375412" duration="317000" />
       <workItem from="1598454862775" duration="2702000" />
-      <workItem from="1598522028477" duration="9592000" />
+      <workItem from="1598522028477" duration="10657000" />
     </task>
     <task id="LOCAL-00001" summary="Performed tests">
       <created>1598528117099</created>
@@ -144,7 +149,14 @@
       <option name="project" value="LOCAL" />
       <updated>1598528117099</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added README.md and LICENSE.md">
+      <created>1598532292876</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1598532292876</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -163,7 +175,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Performed tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="Performed tests" />
+    <MESSAGE value="Added README.md and LICENSE.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added README.md and LICENSE.md" />
   </component>
   <component name="WindowStateProjectService">
     <state x="397" y="7" key="#PHP" timestamp="1598524247126">
@@ -178,22 +191,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="105" key="FileChooserDialogImpl/0.0.1366.728/-1920.0.1920.1040@0.0.1366.728" timestamp="1598524034790" />
-    <state width="1323" height="200" key="GridCell.Tab.0.bottom" timestamp="1598527874727">
+    <state width="1323" height="200" key="GridCell.Tab.0.bottom" timestamp="1598533103357">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="200" key="GridCell.Tab.0.bottom/0.0.1366.728/-1920.0.1920.1040@0.0.1366.728" timestamp="1598527874727" />
-    <state width="1323" height="200" key="GridCell.Tab.0.center" timestamp="1598527874727">
+    <state width="1323" height="200" key="GridCell.Tab.0.bottom/0.0.1366.728/-1920.0.1920.1040@0.0.1366.728" timestamp="1598533103357" />
+    <state width="1323" height="200" key="GridCell.Tab.0.center" timestamp="1598533103357">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="200" key="GridCell.Tab.0.center/0.0.1366.728/-1920.0.1920.1040@0.0.1366.728" timestamp="1598527874727" />
-    <state width="1323" height="200" key="GridCell.Tab.0.left" timestamp="1598527874727">
+    <state width="1323" height="200" key="GridCell.Tab.0.center/0.0.1366.728/-1920.0.1920.1040@0.0.1366.728" timestamp="1598533103357" />
+    <state width="1323" height="200" key="GridCell.Tab.0.left" timestamp="1598533103357">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="200" key="GridCell.Tab.0.left/0.0.1366.728/-1920.0.1920.1040@0.0.1366.728" timestamp="1598527874727" />
-    <state width="1323" height="200" key="GridCell.Tab.0.right" timestamp="1598527874727">
+    <state width="1323" height="200" key="GridCell.Tab.0.left/0.0.1366.728/-1920.0.1920.1040@0.0.1366.728" timestamp="1598533103357" />
+    <state width="1323" height="200" key="GridCell.Tab.0.right" timestamp="1598533103357">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="200" key="GridCell.Tab.0.right/0.0.1366.728/-1920.0.1920.1040@0.0.1366.728" timestamp="1598527874727" />
+    <state width="1323" height="200" key="GridCell.Tab.0.right/0.0.1366.728/-1920.0.1920.1040@0.0.1366.728" timestamp="1598533103357" />
     <state x="447" y="87" key="NewPhpClassDialog" timestamp="1598522362627">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -202,10 +215,14 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="9" key="SettingsEditor/0.0.1366.728/-1920.0.1920.1040@0.0.1366.728" timestamp="1598524053368" />
-    <state x="462" y="208" key="git4idea.ui.GitTagDialog" timestamp="1598528217652">
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1598532362470">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="462" y="208" key="git4idea.ui.GitTagDialog/0.0.1366.728/-1920.0.1920.1040@0.0.1366.728" timestamp="1598528217652" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728/-1920.0.1920.1040@0.0.1366.728" timestamp="1598532362470" />
+    <state x="462" y="208" key="git4idea.ui.GitTagDialog" timestamp="1598532088124">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="462" y="208" key="git4idea.ui.GitTagDialog/0.0.1366.728/-1920.0.1920.1040@0.0.1366.728" timestamp="1598532088124" />
     <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1598455699261">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
