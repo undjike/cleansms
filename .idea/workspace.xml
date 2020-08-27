@@ -19,13 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9140e4a8-7e6a-4ae7-9e2d-f6b470606e4c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/cleansms.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/cleansms.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+    <list default="true" id="9140e4a8-7e6a-4ae7-9e2d-f6b470606e4c" name="Default Changelist" comment="Performed tests">
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CleanSms.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/CleanSms.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,8 +135,16 @@
       <updated>1598454374403</updated>
       <workItem from="1598454375412" duration="317000" />
       <workItem from="1598454862775" duration="2702000" />
-      <workItem from="1598522028477" duration="5675000" />
+      <workItem from="1598522028477" duration="9592000" />
     </task>
+    <task id="LOCAL-00001" summary="Performed tests">
+      <created>1598528117099</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1598528117099</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -156,6 +160,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Performed tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Performed tests" />
   </component>
   <component name="WindowStateProjectService">
     <state x="397" y="7" key="#PHP" timestamp="1598524247126">
@@ -194,6 +202,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="9" key="SettingsEditor/0.0.1366.728/-1920.0.1920.1040@0.0.1366.728" timestamp="1598524053368" />
+    <state x="462" y="208" key="git4idea.ui.GitTagDialog" timestamp="1598528217652">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="462" y="208" key="git4idea.ui.GitTagDialog/0.0.1366.728/-1920.0.1920.1040@0.0.1366.728" timestamp="1598528217652" />
     <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1598455699261">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
