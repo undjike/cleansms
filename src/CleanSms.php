@@ -163,32 +163,80 @@ class CleanSms
      * Send SMS to multiple addressees
      *
      * @param string $message
-     * @param string|array $to List of phone numbers (+237*****, +245*****, ...)
+     * @param string|string[] $to Phone number (Ex: '+237*****') or array of phone numbers (Ex: ['+237*****', '+245*****', ...])
+     * @param bool $transactional
      * @return false|mixed
      * @throws Exception
      */
-    public function sendSms($message, $to)
+    public function sendSms($message, $to, $transactional = true)
     {
         $this->checkApiKeyIsDefined();
 
-        if (is_array($to))
-            $to = implode(', ', $to);
-        elseif (!is_string($to))
-            throw new Exception('The given phone numbers have a wrong type.');
+        if (is_string($to)) $to = [$to];
+
+        if ($transactional)
+        {
+            $result = array();
+
+            foreach ($to as $number) {
+                array_push($result, $this->sendTransactional($message, $number));
+
+                // Sleep before performing next sending
+                if (next($to)) sleep(1);
+            }
+
+            return count($result) === 1 ? $result[0] : $result;
+        }
+        else return $this->sendCampaign($message, $to);
+    }
+
+    /**
+     * Send transactional SMS
+     *
+     * @param string $message
+     * @param string
+     * @return false|mixed
+     * @throws Exception
+     */
+    private function sendTransactional($message, $to)
+    {
+        if (!is_string($to))
+            throw new Exception('The given phone number have a wrong type or format.');
+
+        $data = [
+            'msisdn' => trim($to),
+            'msg' => $message
+        ];
+
+        $data['truefalse'] = true;
+        $url = $this->urls['sms'];
+
+        $url = str_replace("{api_key}", urlencode($this->apiKey), $url);
+        return $this->exec($data, $url);
+    }
+
+    /**
+     * Send campaign SMS
+     *
+     * @param string $message
+     * @param string[]
+     * @return false|mixed
+     * @throws Exception
+     */
+    private function sendCampaign($message, $to)
+    {
+        if (!is_array($to))
+            throw new Exception('The given phone numbers have a wrong type or format.');
+
+        $to = implode(', ', $to);
 
         $data = [
             'msisdn' => trim($to, ' ,'),
             'msg' => $message
         ];
 
-        if (strpos($to, ',') === false) {
-            $data['truefalse'] = true;
-            $url = $this->urls['sms'];
-        }
-        else {
-            $data['name'] = 'MyService';
-            $url = str_replace('simple', 'campaign', $this->urls['sms']);
-        }
+        $data['name'] = 'MyService';
+        $url = str_replace('simple', 'campaign', $this->urls['sms']);
 
         $url = str_replace("{api_key}", urlencode($this->apiKey), $url);
         return $this->exec($data, $url);

@@ -19,8 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9140e4a8-7e6a-4ae7-9e2d-f6b470606e4c" name="Default Changelist" comment="Added README.md and LICENSE.md">
+    <list default="true" id="9140e4a8-7e6a-4ae7-9e2d-f6b470606e4c" name="Default Changelist" comment="Added service message type">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CleanSms.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/CleanSms.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Unit/SmsServiceTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Unit/SmsServiceTest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,7 +101,7 @@
       <recent name="E:\Personnel\My Laravel Publications\cleansms\tests\Unit" />
     </key>
   </component>
-  <component name="RunManager" selected="PHPUnit.SmsServiceTest.testGetCredit (1)">
+  <component name="RunManager" selected="PHPUnit.SmsServiceTest.testSendSms (1)">
     <configuration name="SmsServiceTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="Undjike\CleanSmsPhp\Tests\Unit\SmsServiceTest" file="$PROJECT_DIR$/tests/Unit/SmsServiceTest.php" scope="Class" />
       <method v="2" />
@@ -122,9 +124,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="PHPUnit.SmsServiceTest.testSendSms (1)" />
         <item itemvalue="PHPUnit.SmsServiceTest.testGetCredit (1)" />
         <item itemvalue="PHPUnit.SmsServiceTest" />
-        <item itemvalue="PHPUnit.SmsServiceTest.testSendSms (1)" />
         <item itemvalue="PHPUnit.SmsServiceTest.testSendSms" />
         <item itemvalue="PHPUnit.SmsServiceTest.testGetCredit" />
       </list>
@@ -141,6 +143,11 @@
       <workItem from="1598454375412" duration="317000" />
       <workItem from="1598454862775" duration="2702000" />
       <workItem from="1598522028477" duration="10657000" />
+      <workItem from="1598533684845" duration="621000" />
+      <workItem from="1598654761832" duration="707000" />
+      <workItem from="1598690288729" duration="9570000" />
+      <workItem from="1598736268620" duration="6192000" />
+      <workItem from="1598816422349" duration="482000" />
     </task>
     <task id="LOCAL-00001" summary="Performed tests">
       <created>1598528117099</created>
@@ -156,7 +163,14 @@
       <option name="project" value="LOCAL" />
       <updated>1598532292876</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Updated README.md">
+      <created>1598533943218</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1598533943218</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -172,11 +186,13 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Performed tests" />
     <MESSAGE value="Added README.md and LICENSE.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added README.md and LICENSE.md" />
+    <MESSAGE value="Updated README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated README.md" />
   </component>
   <component name="WindowStateProjectService">
     <state x="397" y="7" key="#PHP" timestamp="1598524247126">
@@ -191,21 +207,25 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="105" key="FileChooserDialogImpl/0.0.1366.728/-1920.0.1920.1040@0.0.1366.728" timestamp="1598524034790" />
-    <state width="1323" height="200" key="GridCell.Tab.0.bottom" timestamp="1598533103357">
+    <state width="1323" height="200" key="GridCell.Tab.0.bottom" timestamp="1598742757821">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1323" height="200" key="GridCell.Tab.0.bottom/0.0.1366.728/-1920.-191.1920.1040@0.0.1366.728" timestamp="1598742757821" />
     <state width="1323" height="200" key="GridCell.Tab.0.bottom/0.0.1366.728/-1920.0.1920.1040@0.0.1366.728" timestamp="1598533103357" />
-    <state width="1323" height="200" key="GridCell.Tab.0.center" timestamp="1598533103357">
+    <state width="1323" height="200" key="GridCell.Tab.0.center" timestamp="1598742757821">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1323" height="200" key="GridCell.Tab.0.center/0.0.1366.728/-1920.-191.1920.1040@0.0.1366.728" timestamp="1598742757821" />
     <state width="1323" height="200" key="GridCell.Tab.0.center/0.0.1366.728/-1920.0.1920.1040@0.0.1366.728" timestamp="1598533103357" />
-    <state width="1323" height="200" key="GridCell.Tab.0.left" timestamp="1598533103357">
+    <state width="1323" height="200" key="GridCell.Tab.0.left" timestamp="1598742757821">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1323" height="200" key="GridCell.Tab.0.left/0.0.1366.728/-1920.-191.1920.1040@0.0.1366.728" timestamp="1598742757821" />
     <state width="1323" height="200" key="GridCell.Tab.0.left/0.0.1366.728/-1920.0.1920.1040@0.0.1366.728" timestamp="1598533103357" />
-    <state width="1323" height="200" key="GridCell.Tab.0.right" timestamp="1598533103357">
+    <state width="1323" height="200" key="GridCell.Tab.0.right" timestamp="1598742757821">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1323" height="200" key="GridCell.Tab.0.right/0.0.1366.728/-1920.-191.1920.1040@0.0.1366.728" timestamp="1598742757821" />
     <state width="1323" height="200" key="GridCell.Tab.0.right/0.0.1366.728/-1920.0.1920.1040@0.0.1366.728" timestamp="1598533103357" />
     <state x="447" y="87" key="NewPhpClassDialog" timestamp="1598522362627">
       <screen x="0" y="0" width="1366" height="728" />
@@ -215,10 +235,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="9" key="SettingsEditor/0.0.1366.728/-1920.0.1920.1040@0.0.1366.728" timestamp="1598524053368" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1598532362470">
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1598534034585">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728/-1920.0.1920.1040@0.0.1366.728" timestamp="1598532362470" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728/-1920.0.1920.1040@0.0.1366.728" timestamp="1598534034585" />
     <state x="462" y="208" key="git4idea.ui.GitTagDialog" timestamp="1598532088124">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

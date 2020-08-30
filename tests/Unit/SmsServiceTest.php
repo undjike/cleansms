@@ -19,7 +19,7 @@ use Undjike\CleanSmsPhp\CleanSms;
 class SmsServiceTest extends TestCase
 {
     const SMS_EMAIL = 'ndjikezoaulrich@gmail.com';
-    const SMS_API_KEY = 'Your CleanSMS API Key here';
+    const SMS_API_KEY = '121|Nm51Tcy1596796895riAYPUp';
 
     /**
      * Test SMS account balance
@@ -33,14 +33,9 @@ class SmsServiceTest extends TestCase
             ->email(self::SMS_EMAIL)
             ->getCredit();
 
-        $jsonable = json_decode($result, true);
-
-        if (json_last_error() === JSON_ERROR_NONE)
-            $this->assertTrue(false, $jsonable['result']);
-        else
-            $this->assertTrue(
-                (int) $result > -1
-            );
+        $this->assertTrue(
+            (int) filter_var($result, FILTER_SANITIZE_NUMBER_INT) > -1
+        );
     }
 
     /**
@@ -52,17 +47,14 @@ class SmsServiceTest extends TestCase
             ->apiKey(self::SMS_API_KEY)
             ->email(self::SMS_EMAIL)
             ->sendSms(
-                'Hi man, are you okay this morning?',
-                '+237656278151'
+                "Hi girl, do you know who is thinking about you right now? Though \nIt is " . date('J d F Y H:i'),
+                $to = ['+237697777205']
             );
 
-        $jsonable = json_decode($result, true);
-
-        if (json_last_error() === JSON_ERROR_NONE)
-            $this->assertTrue(false, $jsonable['result']);
-        else
-            $this->assertTrue(
-                (int) $result === 1
-            );
+        $this->assertTrue(
+            count($to) == 1 ?
+                filter_var($result, FILTER_SANITIZE_NUMBER_INT) == "1"
+                : is_array($result)
+        );
     }
 }
