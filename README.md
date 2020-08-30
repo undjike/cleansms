@@ -39,19 +39,19 @@ CleanSms::create()
      ->email('YOUR_CLEANSMS_EMAIL')
      ->sendSms(
          'MESSAGE_TO_SEND',
-         'RECEIVER_PHONE_NUMBER (Ex: +237*****, +245*****, ...)'
+         'RECEIVER_PHONE_NUMBER Phone number (Ex: "+237*****") or array of phone numbers (Ex: ["+237*****", "+245*****", ...])'
      );
 
 /**
-    Return "1" if the message is successfully sent, "0" if not.
+    Return true if the message is successfully sent, false if not.
     The response can be a JSON in some cases like 'no balance'.
 */
 ```
 
-**Note**: `RECEIVER_PHONE_NUMBER` can be an **_array_** of valid phone numbers, or a **_string_** containing numbers separated by ` ,`.
+**Note**: `RECEIVER_PHONE_NUMBER` can be an **_array_** of valid phone numbers, or a **_string_** containing a single number.
 
 
-You can query you account balance using this package.
+You can query your account balance using this package.
 
 ```php
 use Undjike\CleanSmsPhp\CleanSms;
@@ -62,7 +62,7 @@ CleanSms::create()
      ->getCredit();
 
 /**
-    Return the number of SMS remaining in your account. (Ex: "3")
+    Return the number of SMS remaining in your account. (Ex: 44)
 */
 ```
 

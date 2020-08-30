@@ -148,7 +148,7 @@ class CleanSms
     /**
      * Get remaining SMS in the account
      *
-     * @return false|mixed
+     * @return int|mixed
      * @throws Exception
      */
     public function getCredit()
@@ -156,7 +156,12 @@ class CleanSms
         $this->checkApiKeyIsDefined();
 
         $getCreditUrl = str_replace("{api_key}", urlencode($this->apiKey), $this->urls['credit']);
-        return $this->exec(array(), ($this->useCustomUrls ? $this->customUrls['credit'] : $getCreditUrl));
+        $response = $this->exec(array(), ($this->useCustomUrls ? $this->customUrls['credit'] : $getCreditUrl));
+
+        if (($credit = (int) filter_var($response, FILTER_SANITIZE_NUMBER_INT)) > -1)
+            return $credit;
+
+        return $response;
     }
 
     /**
@@ -165,7 +170,7 @@ class CleanSms
      * @param string $message
      * @param string|string[] $to Phone number (Ex: '+237*****') or array of phone numbers (Ex: ['+237*****', '+245*****', ...])
      * @param bool $transactional
-     * @return false|mixed
+     * @return bool|mixed
      * @throws Exception
      */
     public function sendSms($message, $to, $transactional = true)
@@ -176,16 +181,23 @@ class CleanSms
 
         if ($transactional)
         {
-            $result = array();
-
             foreach ($to as $number) {
-                array_push($result, $this->sendTransactional($message, $number));
+                $response = $this->sendTransactional($message, $number);
+
+                if (!filter_var($response, FILTER_SANITIZE_NUMBER_INT) == "1")
+                {
+                    $jsonable = json_decode($response, true);
+
+                    if (json_last_error() === JSON_ERROR_NONE)
+                        return $jsonable;
+                    else return false;
+                }
 
                 // Sleep before performing next sending
                 if (next($to)) sleep(1);
             }
 
-            return count($result) === 1 ? $result[0] : $result;
+            return true;
         }
         else return $this->sendCampaign($message, $to);
     }

@@ -33,9 +33,7 @@ class SmsServiceTest extends TestCase
             ->email(self::SMS_EMAIL)
             ->getCredit();
 
-        $this->assertTrue(
-            (int) filter_var($result, FILTER_SANITIZE_NUMBER_INT) > -1
-        );
+        $this->assertIsNumeric($result);
     }
 
     /**
@@ -47,14 +45,10 @@ class SmsServiceTest extends TestCase
             ->apiKey(self::SMS_API_KEY)
             ->email(self::SMS_EMAIL)
             ->sendSms(
-                "Hi girl, do you know who is thinking about you right now? Though \nIt is " . date('J d F Y H:i'),
-                $to = ['+237697777205']
+                "I can assure you, my little girl, that I do love you and I can't see any future without you. May God help me to keep you close as days, months, years and decades go by...",
+                $to = ['+237659026491']
             );
 
-        $this->assertTrue(
-            count($to) == 1 ?
-                filter_var($result, FILTER_SANITIZE_NUMBER_INT) == "1"
-                : is_array($result)
-        );
+        $this->assertTrue($result);
     }
 }
